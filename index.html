@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NVSU CAT</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .body {
+            background: url(bground.png);
+            background-size: contain;
+        }
+
+        #gray-bg {
+            opacity: 1;
+            background: #343a40e8!important;
+        } 
+
+        .body .body-content {
+            opacity: 100%;
+        }
+
+        .body .body-content #logo{
+            width: 7em;
+        }
+
+        .body .body-content .bg-warning h2{
+            font-family: 'Aclonica', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <section class="nav-bar">
+        <div class="container-fluid bg-success">
+            <nav class="navbar navbar-expand-lg bg-success navbar-dark">
+                <a href="#" class="navbar-brand">NVSU CAT</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-targer="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="#" class="nav-item nav-link text-white">Home</a>
+                        <a href="#" class="nav-item nav-link text-white">Aboout</a>
+                        <a href="#" class="nav-item nav-link text-white">Application</a>
+                        <a href="#" class="nav-item nav-link text-white">Requirements</a>
+                        <a href="#" class="nav-item nav-link text-white">Contact Us</a>
+                        <a href="#" class="nav-item nav-link text-white">Exam Dates</a>
+                    </div>
+                   <div class="text-white">
+                        <a href="#" class="text-white"><i class="fas fa-user"></i>&nbsp; Apply Now</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="#" class="text-white"><i class="fas fa-sign-in-alt"></i></i>&nbsp; Login</a>   
+                   </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <section class="body container-fluid">
+        <div class="container pb-5" id="gray-bg">
+            <div class="body-content d-flex flex-column justify-content-center ">
+                <img class="align-self-center my-4" src="opcatlogo.png" alt="logo" id="logo">
+                <div class="container bg-warning pt-3 ">
+                    <h2 class="text-center">NCAT Online Free Registration</h2>
+                    <div class="row bg-light py-3">
+                        <div class="col-4">
+                            <div class="card">
+                                <p class="text-uppercase bg-danger text-white px-3 py-2"><i class="fas fa-bullhorn"></i> A Friendly Reminder</p>
+                                <div class="card-body">
+                                    <p>Before you register online, please make sure you have an ecopy of your 2x2 Photo ID (JPEG or PNG file) that must not be more than 300 to 500 kilobytes KB).</p>
+                                    <div class="alert alert-danger text-danger">
+                                        <strong class="text-uppercase">Important!</strong> An applicant should have an active and correct <strong class="text-uppercase"><u>Email address</u></strong> for activation and verification purposes.
+                                    </div>
+                                    <div class="alert alert-danger text-danger">
+                                        <strong class="text-uppercase">Important!</strong> To optimize your web experience, we strongly recommend using the latest versions of your web browser. Keeping your web browser up to date is very important. By running an older web browser you will also probably be missing out on useful and features of this website which newer browser support.<br>
+                                        <img class="img-fluid" src="browser-update.png" alt="browser update">
+                                        To update your web browser, please visit and learn from this <a href="#">tutorial</a>.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <p class="text-uppercase bg-danger text-white px-3 py-2"><i class="fas fa-bullhorn"></i> Nice to know</p>
+                                <div class="card-body">
+                                    <p class="pb-0">This is for the <b>NVSU College Admission Text (NCAT) dubbed as iApply</b>.</p>
+                                    <small>Please make sure that the information you will provide is true and correct.</small><br>
+                                    <small>All fields are required unless marked Optional</small>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <p class="text-uppercase bg-danger text-white px-3 py-2"><i class="fas fa-bullhorn"></i> Date of application</p>
+                                <div class="card-body">
+                                    <p>Today is: <b id="date-today"></b></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="jumbotron p-3 pb-5">
+                                <img class="img-fluid" src="reg-bg.webp" alt="banner">
+                                <div class="alert-success px-3 py-4">
+                                    <div class="alert alert-primary">
+                                        <strong class="text-uppercase">Instructions:</strong> Enter correct and active e-mail address. All emails from NVSU NCAT will be sent to this address. This email address is not made public. Make sure that firstname and lastname are copied from your birth certificate.
+                                    </div>
+                                    <form action="" class="text-body">
+                                        <div class="form-group row">
+                                            <div class="col-6">
+                                                <label for="firstname">
+                                                    <small class="font-weight-bold">Firstname <span class="text-danger">*</span></small>
+                                                </label>
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text">
+                                                            <span class="fas fa-user"></span>
+                                                        </span>
+                                                    </div>
+                                                    <input type="text" class="form-control" placeholder="Enter firstname" required>
+                                                </div>
+                                                <small class="text-secondary">Your complete firstname on PSA/NSO birthcertificate.</small>
+                                            </div>
+                                            <div class="col-6">
+                                                <label for="middlename">
+                                                    <small class="font-weight-bold">Middlename <span class="font-weight-normal">(optional)</span></small>
+                                                </label>
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text">
+                                                            <span class="fas fa-user"></span>
+                                                        </span>
+                                                    </div>
+                                                    <input type="text" class="form-control" placeholder="Enter middlename" required>
+                                                </div>
+                                                <small class="text-secondary">Your complete middlename on PSA/NSO birthcertificate.</small>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col">
+                                                <label for="lastname">
+                                                    <small class="font-weight-bold">Lastname<span class="text-danger">*</span></small>
+                                                </label>
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text">
+                                                            <span class="fas fa-user"></span>
+                                                        </span>
+                                                    </div>
+                                                    <input type="text" class="form-control" placeholder="Enter lastname" required>
+                                                </div>
+                                                <small class="text-secondary">Your complete lastname on PSA/NSO birthcertificate.</small>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col">
+                                                <label for="lrn">
+                                                    <small class="font-weight-bold">Learners Reference Nubmer (LRN) <span class="text-danger">*</span></small>
+                                                </label>
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text">
+                                                            <span class="fas fa-sort-numeric-down"></span>
+                                                        </span>
+                                                    </div>
+                                                    <input type="text" class="form-control" placeholder="Enter LRN Number" required>
+                                                </div>
+                                                <small class="text-secondary">Please copy your LRN Number that appears on your High School Card.</small>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col">
+                                                <label for="email">
+                                                    <small class="font-weight-bold">Email Address <span class="text-danger">*</span></small>
+                                                </label>
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text">
+                                                            <span class="fas fa-envelope"></span>
+                                                        </span>
+                                                    </div>
+                                                    <input type="text" class="form-control" placeholder="Enter active e-mail address" required>
+                                                </div>
+                                                <small class="text-secondary">Your valid email address, which you can access anytime. You can only use one (1) email address per online registration to NVSU iApply.</small>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <button class="btn btn-success px-3" ><i class="fab fa-telegram-plane"></i> Register Account</button>     
+                                            </div>
+                                            <div class="col-6">
+                                                <small>Forgot password? Request New Password <a href="#">here</a>.</small>
+                                            </div>
+                                        </div>                             
+                                    </form>
+                                    <div class="border-top border-secondary mt-4 pt-3">
+                                        <small>We convey to you our deepest appreciation for your interest in becoming a 'NVSUan'. Be sure to remember your e-mail address and password when you submit your online application.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>               
+            </div>
+        </div>
+    </section>
+
+    <section class="footer container-fluid bg-dark pt-4 pb-3">
+        <div class="text-center">
+            <i class="fas fa-angle-up text-success"></i><br>
+            <small class="text-white">Copyright &copy; 2022. NVSU Educational Testing Center and CSIT Department. All Rights Reserved. Developed by the <a href="#">NVSU WebTeam</a></small>
+            <p class="lead font-weight-normal text-secondary">Follow us on: <a href="#"><i class="fab fa-facebook-square h3 pt-3"></i></a> <a href="#"><i class="fas fa-globe h3 pt-3"></i></a></p>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script>
+        var today = new Date();
+        const month = today.toLocaleString('default', { month: 'long' });
+        const day = today.toLocaleString('default', { weekday: 'long' });
+        var date = day + ', ' + month + ' ' + today.getDate() + ', ' + today.getFullYear();
+        document.getElementById("date-today").innerHTML = date;
+    </script>
+</body>
+</html>
