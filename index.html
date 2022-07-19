@@ -28,12 +28,16 @@
             opacity: 100%;
         }
 
-        .body .body-content #logo{
+        #logo{
             width: 7em;
         }
 
         .body .body-content .bg-warning h2{
             font-family: 'Aclonica', sans-serif;
+        }
+
+        .modal-footer {
+            background: #ddd;
         }
     </style>
 </head>
@@ -57,10 +61,56 @@
                     </div>
                    <div class="text-white">
                         <a href="#" class="text-white"><i class="fas fa-user"></i>&nbsp; Apply Now</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="#" class="text-white"><i class="fas fa-sign-in-alt"></i></i>&nbsp; Login</a>   
+                        <a data-target="#myModal" role="button" class="text-white" data-toggle="modal"><i class="fas fa-sign-in-alt"></i></i>&nbsp; Login</a>   
                    </div>
                 </div>
             </nav>
+        </div>
+
+        <div id="myModal" class="modal fade" tabindex="1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-success py-2 d-flex justify-content-between">
+                        <div></div>
+                        <img class="align-self-center my-2" src="opcatlogo.png" alt="logo" id="logo">
+                        <button type="button" class="close ml-0" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>We convey to you our deepest appreciation for your interest in becoming a "NVSUan". Be sure to remember your email address, password, and reference number when you submit your online application.</p>
+                        <form>
+                            <div class="form-group row">
+                                <div class="col">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">
+                                                <span class="fas fa-envelope"></span>
+                                            </span>
+                                        </div>
+                                        <input type="email" class="form-control" placeholder="Email address or Reference No." required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">
+                                                <span class="fas fa-lock"></span>
+                                            </span>
+                                        </div>
+                                        <input type="password" class="form-control" placeholder="Password" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-warning text-white form-control my-1" href="#"><i class="fas fa-key"></i>&nbsp;&nbsp;&nbsp;Login Account</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-between">
+                        <small>No account yet? <a href="body">Register now.</a> It's FREE!</small>
+                        <small>Forgot password? Reset <a href="#">here</a>.</small>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -215,7 +265,7 @@
             <p class="lead font-weight-normal text-secondary">Follow us on: <a href="#"><i class="fab fa-facebook-square h3 pt-3"></i></a> <a href="#"><i class="fas fa-globe h3 pt-3"></i></a></p>
         </div>
     </section>
-
+      
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
     <script>
